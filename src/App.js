@@ -1,16 +1,20 @@
-import React from 'react';
+import React,{useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App = () => {
-    const refreshPage = ()=>{
-        window.location.reload();
+function App () {
+    let  [,setState]=useState();
+    function handleUpdate() {
+        // Passing an empty object will re-render the component
+        setState({});
     }
 
-    var numberarray = []
+    var numberarray = [];
+
     for (var i = 0, l = 10; i < l; i++) {
-        numberarray.push(Math.floor(Math.random() * 2))
+        numberarray.push(Math.floor(Math.random() * 2));
     }
+
 
     return (
         <div className="App">
@@ -28,7 +32,7 @@ const App = () => {
                                </div>
                               )}
             </div>
-            <button type="submit" onClick={() => { refreshPage() }}>Click</button>
+            <button onClick={handleUpdate}>New</button>
           </div>
         </div>
     );
