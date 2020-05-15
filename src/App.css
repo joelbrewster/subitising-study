@@ -9,7 +9,10 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 1em;
+    padding: 1em;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 article,
 aside,
@@ -678,4 +681,14 @@ button {
     margin: 3rem auto;
     padding: 2rem 4rem;
     font-size: 2em;
+}
+
+@media only screen and (max-width: 480px) {
+    .dot-container {
+	padding: .25rem;
+    }
+
+    .dot {
+	border: 1px solid black;
+    }
 }
