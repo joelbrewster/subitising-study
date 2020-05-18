@@ -20,7 +20,7 @@ function App () {
         <div className="App">
           <header className="App-header">
             <h1>
-              See and say
+              See and Say
             </h1>
           </header>
           <div className="content">
