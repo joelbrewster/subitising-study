@@ -1,8 +1,8 @@
-import React,{useState} from 'react';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
 
-function App () {
-    let  [,setState]=useState();
+function App() {
+    let [, setState] = useState();
     function handleUpdate() {
         // Passing an empty object will re-render the component
         setState({});
@@ -14,25 +14,21 @@ function App () {
         numberarray.push(Math.floor(Math.random() * 2));
     }
 
-
     return (
         <div className="App">
-          <header className="App-header">
-            <h1>
-              See and Say
-            </h1>
-          </header>
-          <div className="content">
-            <div className="row">
-
-              {numberarray.map(number =>
-                               <div className="dot-container">
-                                 <div className={"dot active-" + number}></div>
-                               </div>
-                              )}
+            <header className="App-header">
+                <h1>See and Say</h1>
+            </header>
+            <div className="content">
+                <div className="row">
+                    {numberarray.map((number) => (
+                        <div className="dot-container">
+                            <div className={"dot active-" + number}></div>
+                        </div>
+                    ))}
+                </div>
+                <button onClick={handleUpdate}>New</button>
             </div>
-            <button onClick={handleUpdate}>New</button>
-          </div>
         </div>
     );
 }

@@ -624,7 +624,7 @@ pre tt:after {
 }
 @media only screen and (max-width: 480px) {
     html {
-	font-size: 100%;
+        font-size: 100%;
     }
 }
 
@@ -636,15 +636,15 @@ body {
 
 @keyframes fadeInAnimation {
     0% {
-	opacity: 0;
+        opacity: 0;
     }
     100% {
-	opacity: .975;
+        opacity: .975;
     }
 }
 
 .content {
-    
+
 }
 
 .row {
@@ -669,12 +669,12 @@ body {
 
 .active-0 {
     background-color: none;
-    
+
 }
 
 .active-1 {
     background-color: black;
-    
+
 }
 
 button {
@@ -685,10 +685,10 @@ button {
 
 @media only screen and (max-width: 480px) {
     .dot-container {
-	padding: .25rem;
+        padding: .25rem;
     }
 
     .dot {
-	border: 1px solid black;
+        border: 1px solid black;
     }
 }
