@@ -2,7 +2,7 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 body {
     text-align: center;
@@ -207,7 +207,7 @@ html {
 body {
     color: hsla(0, 0%, 0%, 0.8);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
@@ -238,7 +238,7 @@ h1 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
@@ -255,7 +255,7 @@ h2 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.62671rem;
@@ -272,7 +272,7 @@ h3 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1.38316rem;
@@ -289,7 +289,7 @@ h4 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 1rem;
@@ -306,7 +306,7 @@ h5 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.85028rem;
@@ -323,7 +323,7 @@ h6 {
     margin-bottom: 1.45rem;
     color: inherit;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 0.78405rem;
@@ -600,7 +600,7 @@ code {
     background-color: hsla(0, 0%, 0%, 0.04);
     border-radius: 3px;
     font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+                 "Liberation Mono", Menlo, Courier, monospace;
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -628,10 +628,19 @@ pre tt:after {
     }
 }
 
+@media only screen and (min-width: 801px) {
+    .App {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
 body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes fadeInAnimation {
@@ -654,10 +663,17 @@ body {
 }
 
 .dot-container {
-    width: calc(20vw - .4em);
-    height: calc(20vw - .4em);
+    width: calc((100vw / 5) - .4em);
+    height: calc((100vw / 5) - .4em);
     outline: 1px solid black;
     padding: 1rem;
+}
+
+@media only screen and (min-width: 800px) {
+    .dot-container {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 .dot {
