@@ -1,0 +1,6 @@
+* Subitising study
+A conceptual subitising app for younger children to practice subitising visual scenes with a number of items.
+
+It's a quick build that's optimised for mobile devices. It works as an app being added to a devices homescreen if needed.
+
+- Select the "New button" to load another group of dots to practice with.
